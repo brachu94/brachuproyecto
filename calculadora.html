@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Calculadorashit</title>
+ <script src="http://code.jquery.com/jquery-2.1.4.js" ></script>
+</head>
+<body>
+ <input id="n1" type="number" placeholder="valor 1" />
+ <input id="n2" type="number" placeholder="valor 2" />
+ <button id="sumar"> Suma </button>
+  <button id="restar"> Resta</button>
+  <button id="dividir"> Divide</button>
+  <button id="multip"> Multiplica</button>
+ <div><h3>resultado : </h3>
+ 	<div id="resultado">
+ 	 
+ 	</div>
+  </div>
+
+ <script>
+ 			var botonsumar = document.getElementById('sumar');
+ 			var botonrestar = document.getElementById('restar');
+ 			var botonmulti = document.getElementById('multip');
+ 			var botondiv = document.getElementById('dividir');
+ 			var n1 = document.getElementById('n1');
+ 			var n2 = document.getElementById('n2');
+ 			var contresult = document.getElementById('resultado');
+
+ 			botonsumar.onclick = function(){
+
+ 				var x = parseInt(n1.value) + parseInt(n2.value);
+ 				contresult.innerHTML =x;
+
+ 			}
+ 			botonrestar.onclick = function(){
+
+ 				var x = parseInt(n1.value) - parseInt(n2.value);
+ 				contresult.innerHTML =x;
+
+ 			}
+ 			botondiv.onclick = function(){
+
+ 				var x = parseInt(n1.value) / parseInt(n2.value);
+ 				contresult.innerHTML =x;
+
+ 			}
+ 			botonmulti.onclick = function(){
+
+ 				var x = parseInt(n1.value) * parseInt(n2.value);
+ 				contresult.innerHTML =x;
+
+ 			}
+
+ </script>
+</body>
+</html>
